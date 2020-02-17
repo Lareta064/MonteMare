@@ -1,0 +1,61 @@
+.slider-inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.slider-hash {
+    position: absolute;
+    left: 0;
+    width: 400px;
+    bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-text {
+    width: 48%;
+}
+
+.section-slider {
+    width: 50%;
+
+    .owl-dots {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        display: flex;
+        transform: translate(-100%, -50px)
+    }
+
+    button.owl-dot {
+        width: 100px;
+        height: 5px;
+        background-color: red;
+        margin-right: 50px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.active {
+            background-color: yellow;
+        }
+    }
+
+    .owl-nav {
+        width: 100px;
+        height: 50px;
+        display: flex;
+        position: relative;
+        transform: translate(-50px, -50px);
+
+        button.owl-next,
+        button.owl-prev {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            color: #fff;
+        }
+    }
+}
